@@ -1,0 +1,100 @@
+/**
+ *  
+ *tagAR is a tagging application developed for the Android Platform
+ *Copyright (C) 2012  Mustafa Neguib, MN Tech Solutions
+ *  
+ *This file is part of tagAR.
+ *
+ *tagAR is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ *the Free Software Foundation, either version 3 of the License, or
+ *(at your option) any later version.
+ *
+ *This program is distributed in the hope that it will be useful,
+ *but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *GNU General Public License for more details.
+ *
+ *You should have received a copy of the GNU General Public License
+ *along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ *You can contact the developer/company at the following:
+ *
+ *Phone: 00923224138957
+ *Website: www.mntechsolutions.net
+ *Email: support@mntechsolutions.net , mustafaneguib@mntechsolutions.net
+ *
+ *
+ */
+ 
+Current Version of Project Code: 0.3
+
+To all open source developers out there. We need your help in further developing and improving this application.
+We have published this appplication on to Google Play and are awaiting for the application to be live. We will update this 
+file with the information as soon as we get it.
+
+This application has been tested on the following devices:
+
+Samsung Galaxy Ace GT-S5830 running Android 2.2.1
+
+We need your help in testing this app on the other Android powered devices as well and tell us if it works on them.
+We also need your help in developing fixes if you find any, and to return them to us so that we can incorporate them into the project.
+Mean while we will also be working on improving this app, by adding new features and fixing bugs if we find any.
+
+This is version 0.3 of the application. We will be using the following versioning:
+The major(before the period) is incremented when a new feature is introduced into the app. 
+The minor(after the period) is incremented when a bug is fixed in the app.
+
+This app contains two parts, a client part(Android code), and the server part (PHP code). The Android part is the code that we run as an apk file, 
+while the server part has been hosted on our server.
+
+We have made some changes and fixed some bugs from version 0.0 and 0.1.
+
+Changes Since Version 0.0 to Version 0.1
+
+As expected some of the mobile devices, such as HTC Wildfire S did not show the textures built by OpenGL ES in Screen6.java activity.
+I also tested the app on Galaxy S and that infact only showed white objects, but no textures. To fix this i decided to replace the OpenGL ES
+graphics with Canvas graphics, and drawables. Now showing these graphics should not cause a problem as i am now using the standard techniques
+and Canvas graphics are supported on all of the graphics as far as i know. Due to this the code base has significantly been reduced in size.
+I have removed the package com.OpenGLModelObjectLoader all together as that package was responsible for drawing OpenGL ES models. In place of the package
+i have included an inner public class CustomView which extends the View class in the com.Screens.Screen6.java class.
+Now this new CustomView draws the graphics onto the screen. However, at the moment i am only assuming that this new technique will hopefully work on all of the
+mobile devices, but i will not be certain until i test this app on all of the mobile devices. So at the moment there is no guarantee that this will work on all of
+the mobile devices, but theoretically this should work on all of the mobile devices.
+
+Another change that has been possible due to using of Canvas graphics is that i can now show text on top of the tags. This text 
+is the part of the comment that the user enters when adding a tag.
+		
+
+Changes Since Version 0.1 to Version 0.2
+
+In this version i have made some minor changes only.
+Firstly, i have fixed the screen orientation for all of the screens (activities in the com.Screens package) to landscape. This
+was to allow for easier data input.
+Furthermore, i have made a small change in the logic for displaying the tags. In version 0.1 i was getting the tags whose difference 
+between the direction value and the current value of the direction given by the accelerometer was between -10 and 10. I have increased
+this window to -20 and 20. Now the tags will be displayed for a loner period of time.
+
+Lastly, in the server code (being run on the web server) i have decreased the distanc radius to 5 km, that is tags which are within 5 km from
+the retrieved geo-location data will be shown, rather than 10 km as before. The number of tags retrieved is still 10. 	
+
+The code that will be hosted on github.com will always be of the latest version. For example at the moment the code that is online is of version 0.2.
+
+Finally we are working on setting up and writing tutorials on the project in the wiki, so check out the wiki section regularly for latest content.
+
+Current Version 0.3
+Changes Since Version 0.2 to Version 0.3
+
+In this version i have made some major fixes to the tagging screen. 
+
+Firstly, i have catered the  app to be run on different screen sizes (Our inital testing has given us positive results, but this 
+testing has been done on Samsung Galaxy Ace GT-S5830 and also on the Android Emulator (of different screen sizes), but we still
+need to test this on other mobile devices.
+
+Secondly, we have tried to make the selecting of the tags more accurate, and have tested it on the above mentioned, but then 
+we will not be sure until we test it on actual mobile devices.
+
+Finally, we have catered a scenario where the app could be put in the background when the Home button is pressed, while the location 
+data was being retrieved from the providers. To solve this we have decided to stop listening for updates as soon as we get the location
+updates. This also allows us to save the battery and prevents the system to constantly ask for updates.    
+	

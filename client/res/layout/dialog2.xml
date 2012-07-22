@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="200dp" android:layout_height="205dp">
+ 
+ 
+ <TextView  android:id="@+id/latitude"
+	 android:layout_width="wrap_content" 
+	 android:layout_height="wrap_content"
+	 android:text="@string/latitudeYour" 
+     />
+ 
+ 
+ <TextView android:id="@+id/latitudeTextDialog" 
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:layout_below="@id/latitude"
+     
+     />
+ 
+ 
+ <TextView android:id="@+id/longitude" 
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:text="@string/longitudeYour"
+     android:layout_below="@id/latitudeTextDialog"
+     />
+ 
+ <TextView android:id="@+id/longitudeTextDialog" 
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:layout_below="@id/longitude"
+     />
+ 
+  <TextView android:id="@+id/accuracy" 
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:layout_below="@id/longitudeTextDialog"
+     android:text="@string/accuracyYour"
+     />
+  
+  <TextView android:id="@+id/accuracyTextDialog" 
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:layout_below="@id/accuracy"
+     />
+  
+  
+ <Button android:id="@+id/closeYourDialog"
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content"
+ android:layout_below="@id/accuracyTextDialog"
+ android:text="@string/close" />
+ 
+</RelativeLayout>
