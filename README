@@ -48,7 +48,7 @@ The minor(after the period) is incremented when a bug is fixed in the app.
 This app contains two parts, a client part(Android code), and the server part (PHP code). The Android part is the code that we run as an apk file, 
 while the server part has been hosted on our server.
 
-A history of changes starting from Version 0.1 till Version 0.4
+A history of changes starting from Version 0.0 till Version 0.4
 
 We have made some changes and fixed some bugs from version 0.0 and 0.1.
 
