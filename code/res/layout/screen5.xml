@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical">
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" 
+    	android:gravity="center_horizontal" >
+ 
+ 	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/menu"
+	        android:textScaleX="1.5"
+	        />
+ 	    
+ 	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/empty"
+	        android:textScaleX="4"
+	        />
+      
+ 	    
+ 	
+    	<TextView 
+    	    android:id="@+id/tagLocation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/tagLocation"
+	        />
+    	
+    	 <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/empty"
+	        android:textScaleX="4"
+	        />
+    
+    	    
+    	<TextView 
+    	    android:id="@+id/settings"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/settings"
+	        />
+       
+    	<TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/empty"
+	        android:textScaleX="4"
+	        />
+    
+    	<TextView
+    	    android:id="@+id/about" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/about"
+	        />
+    	
+    	
+    	 <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/empty"
+	        android:textScaleX="4"
+	        />
+    
+    	
+    	<TextView 
+    	    android:id="@+id/exit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/exit"
+	        />
+    
+    </LinearLayout>
+ 	
+</LinearLayout>
