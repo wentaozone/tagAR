@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Screens"
+    android:versionCode="6"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    
+
+    <application
+        android:icon="@drawable/iconlauncher"
+        android:label="@string/appName" >
+        
+         <activity android:name=".Screen1" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         
+          <activity android:name=".Screen2" android:label="@string/appName" android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="com.TagScreen2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          
+        <activity android:name=".Screen3" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.TagScreen3" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity android:name=".Screen4" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.TagScreen4" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity android:name=".Screen5" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.TagScreen5" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity android:name=".Screen6" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.TagScreen6" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         <activity android:name=".Screen7" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.TagScreen7" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name=".Screen8" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.TagScreen8" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+           <activity android:name=".Screen9" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.TagScreen9" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           <activity android:name=".Screen10" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.TagScreen10" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           <activity android:name=".Screen11" android:label="@string/appName" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.TagScreen11" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+           
+    </application>
+
+</manifest>

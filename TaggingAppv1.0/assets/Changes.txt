@@ -1,0 +1,23 @@
+Current Version 1.0
+Changes Since Version 0.4
+
+The version has jumped from Version 0.4 to Version 1.0 is because in this update we are releasing a new feature.
+Please the wiki at https://github.com/mustafaneguib/tagAR/wiki for more information about the versioning being followed.
+
+Firstly, we know that the login facility was a pain to use. Having to login again and again when ever you exited the application
+you had to enter your email and password again. we know that it is a pain, because we ourselves didn't like that, but we have 
+developed a feature which will make your login worries fade away. We are proud to introduce the much needed new "remember my login 
+details" as we like to call it. In this feature the user will only have to login for the first time (we can not guess what your login
+details are for the first time, though that may not entirely be impossible... :P ) and then if the login is successful we store those
+login details encrypted in the internal memory of the mobile device and make it private so that no other unwelcome app can gain access to
+the login details. The next time you will login the system will check if such details exist and will show your list of emails (yes, we are 
+storing a list of emails so that you can login easily via different accounts if you have and not just one). All you have to is to touch one of
+the emails being shown once, and you will be redirected to the login page with the login details already entered (see didn't i tell you how awesome and
+easy it was going to be to login into tagAR now :D ).
+
+Secondly, a minor change is that we have renamed the Exit option in Screen5.java to Exit(Logout) so that the users know that they will be
+logging out when they select this option. 
+
+Finally, in order to support this feature we have added some support code which connect with Screen3.java so that we can pass the required
+data to Screen3.java. We have mentioned in the code which are new additions and changes.
+	
