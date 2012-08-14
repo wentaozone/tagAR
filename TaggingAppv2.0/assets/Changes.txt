@@ -1,0 +1,22 @@
+Current Version 2.0
+Changes Since Version 1.0
+
+New features have been introduced and some have been improved.
+Firstly, we have improved the tagging feature. In the earlier versions the user had to actually
+hold up the mobile device in the direction of the tag to be posted while typing the comment in 
+order to get the tag in the intended direction. Now we are saving the value of the direction before hand when 
+the tagIT button is clicked. More information regarding this has been added in the code (Screen6.java).
+
+Secondly, we are now storing the accuracy of the tag in the database and showing it in the description of the tag, as after use of the app, we have found out
+that the location provider does not give 100% accuracy due to a number of different factors which we will not discuss.
+So the tag the user may post may not be accurate, so we are showing what the accuracy of the tag is.
+
+Thirdly, the new feature being introduced in Version 2.0 is the ability to post pictures of the location being tagged. The user 
+will have the option of taking pictures at the time the tagit button is pressed and the image will be uploaded to the server. When the 
+tag will be retrieved from the server, so will the image be, and will be display as a small thumbnail in the tag's modal, and
+upon touching the image a bigger version of the image will be shown in a new modal. We are keeping the images to be of 80% quality than the original
+and the images size is 350 by 350 pixels. To enable the choice, we are using shared preferences to store the setting, and the setting can be changed
+in the Settings option which can be found on the Menu Screen. This setting will be enabled by default.
+
+Lastly, we have developed a new Menu Screen, with graphical icons instead of the boring list. These images have been made by
+us and we have used ImageView to place them in.
